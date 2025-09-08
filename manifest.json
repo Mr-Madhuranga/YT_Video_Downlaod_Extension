@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Video Downloader Helper",
+    "version": "1.0",
+    "description": "Adds a button to send YouTube video to a downloader service",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/watch*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
