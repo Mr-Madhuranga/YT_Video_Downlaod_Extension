@@ -1,17 +1,24 @@
 {
     "manifest_version": 3,
-    "name": "YouTube Video Downloader Helper",
+    "name": "FocusTube",
     "version": "1.0",
-    "description": "Adds a button to send YouTube video to a downloader service",
-    "permissions": ["activeTab", "scripting"],
+    "description": "Hide the YouTube homepage feed and Shorts section.",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
     "content_scripts": [
       {
-        "matches": ["*://www.youtube.com/watch*"],
-        "js": ["content.js"]
+        "matches": [
+          "https://www.youtube.com/*"
+        ],
+        "css": [
+          "styles.css"
+        ],
+        "js": [
+          "content.js"
+        ]
       }
-    ],
-    "icons": {
-      "48": "icon.png"
-    }
+    ]
   }
-  
