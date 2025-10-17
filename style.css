@@ -1,0 +1,23 @@
+/* Hides the main feed on the homepage (the recommended videos grid) */
+ytd-browse[page-subtype="home"] #primary {
+    display: none !important;
+}
+
+/* Hides the Shorts tab/button in the left sidebar */
+ytd-mini-guide-renderer a[title="Shorts"],
+ytd-guide-renderer a[title="Shorts"] {
+    display: none !important;
+}
+
+/* Hides the Shorts section that appears in subscription or search results */
+ytd-rich-shelf-renderer[is-shorts] {
+    display: none !important;
+}
+
+/* Optionally: Hide the "Related Videos" sidebar and comments on a watch page */
+ytd-watch-flexy #related {
+    display: none !important;
+}
+ytd-watch-flexy #comments {
+    display: none !important;
+}
